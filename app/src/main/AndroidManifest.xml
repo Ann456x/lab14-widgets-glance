@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -33,6 +33,9 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/simple_widget_info" />
         </receiver>
+            <activity
+            android:name=".WorkActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
