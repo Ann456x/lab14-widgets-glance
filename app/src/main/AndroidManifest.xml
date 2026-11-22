@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -46,6 +46,20 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/project_widget_info" />
         </receiver>
+            <receiver
+            android:name=".ProyectoWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/final_widget_info" />
+        </receiver>
+            <activity android:name=".HorarioActivity" android:exported="true" />
+        <activity android:name=".NotasActivity" android:exported="true" />
     </application>
 
 </manifest>
+
+

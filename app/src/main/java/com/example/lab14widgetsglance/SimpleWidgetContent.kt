@@ -1,4 +1,4 @@
-package com.example.lab14widgetsglance
+﻿package com.example.lab14widgetsglance
 
 import android.content.Context
 import androidx.compose.runtime.Composable
@@ -33,16 +33,12 @@ class SimpleWidgetContent : GlanceAppWidget() {
     @Composable
     private fun MyContent() {
         Column(
-            modifier = GlanceModifier
-                .fillMaxSize()
+            modifier = GlanceModifier.fillMaxSize()
                 .background(GlanceTheme.colors.background),
             verticalAlignment = Alignment.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(
-                text = "¿A donde quieres dirigirte?",
-                modifier = GlanceModifier.padding(12.dp)
-            )
+            Text(text = "¿A donde quieres dirigirte?", modifier = GlanceModifier.padding(12.dp))
             Row(horizontalAlignment = Alignment.CenterHorizontally) {
                 Button(
                     text = "Home",
